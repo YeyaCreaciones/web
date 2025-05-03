@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulceros Personalizados</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffafc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff85a2, #ffa07a);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #ffe0ec;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #c71585;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #fff0f5;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero button {
+      background-color: #ff69b4;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .benefits, .contact {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fff0f5;
+    }
+
+    footer {
+      background-color: #ff85a2;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dulceros Personalizados</h1>
+    <p>¡Haz tus fiestas inolvidables con nuestros diseños únicos!</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Catálogo</a>
+    <a href="#beneficios">Ventajas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>El toque dulce y original para tu evento</h2>
+    <p>Dulceros para cumpleaños, bautizos, baby showers, temáticos y más.</p>
+    <button onclick="window.location='#productos'">Ver diseños</button>
+  </section>
+
+  <section class="products" id="productos">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Dulcero+de+Unicornio" alt="Dulcero Unicornio">
+      <h3>Dulcero de Unicornio</h3>
+      <p>Ideal para cumpleaños mágicos. Personalizable con nombre.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Dulcero+de+Superhéroes" alt="Dulcero Superhéroes">
+      <h3>Dulcero de Superhéroes</h3>
+      <p>Perfecto para niños aventureros. Varios personajes disponibles.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Dulcero+de+Animales" alt="Dulcero Animales">
+      <h3>Dulcero de Animalitos</h3>
+      <p>Dulces y sorpresas en diseños de granja o selva.</p>
+    </div>
+  </section>
+
+  <section class="benefits" id="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>🎁 Personalización total con nombre y tema</p>
+    <p>🎨 Hechos a mano con materiales de calidad</p>
+    <p>📦 Entregas a domicilio o punto de encuentro</p>
+    <p>💬 Atención personalizada vía WhatsApp</p>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Email: pedidos@dulcerospersonalizados.com</p>
+    <p>WhatsApp: +52 987 654 3210</p>
+    <p>Instagram: @dulceros_creativos</p>
+  </section>
+
+  <footer>
+    © 2025 Dulceros Personalizados. Hechos con amor para cada celebración.
+  </footer>
+
+</body>
+</html>

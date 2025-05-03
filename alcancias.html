@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alcancías Creativas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6e3;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffb347;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #ffd699;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-image: linear-gradient(to bottom right, #fff8dc, #ffecd2);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #ff944d;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .benefits, .contact {
+      padding: 2rem;
+      background-color: #fff3e0;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffb347;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alcancías Creativas</h1>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>¡Ahorra con estilo y diversión!</h2>
+    <p>Descubre nuestras alcancías originales para niños, jóvenes y adultos. ¡Ideales para regalos!</p>
+    <button onclick="window.location='#productos'">Ver Catálogo</button>
+  </section>
+
+  <section class="products" id="productos">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Alcancía+Cerdito" alt="Alcancía Cerdito">
+      <h3>Alcancía Cerdito</h3>
+      <p>Clásica y adorable. Disponible en varios colores.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Alcancía+Personalizada" alt="Alcancía Personalizada">
+      <h3>Alcancía Personalizada</h3>
+      <p>Con tu nombre o diseño favorito. ¡Hechas a pedido!</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Alcancía+Digital" alt="Alcancía Digital">
+      <h3>Alcancía Digital</h3>
+      <p>Cuenta tus monedas automáticamente. Tecnología y ahorro juntos.</p>
+    </div>
+  </section>
+
+  <section class="benefits" id="beneficios">
+    <h2>¿Por qué elegir nuestras alcancías?</h2>
+    <p>✔ Diseños únicos y divertidos</p>
+    <p>✔ Fomenta el hábito del ahorro desde pequeños</p>
+    <p>✔ Ideales para cualquier ocasión</p>
+    <p>✔ Hecho a mano con amor ❤️</p>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes preguntas o quieres hacer un pedido especial?</p>
+    <p>Email: ventas@alcanciascreativas.com</p>
+    <p>WhatsApp: +52 123 456 7890</p>
+  </section>
+
+  <footer>
+    © 2025 Alcancías Creativas. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalles Creativos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefcfb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #c471f5, #fa71cd);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #f3d9f8;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #8e44ad;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #fef0ff;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero button {
+      background-color: #a64ac9;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .benefits, .contact {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fbe7ff;
+    }
+
+    footer {
+      background-color: #c471f5;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Detalles Creativos</h1>
+    <p>Regalos con alma para momentos que importan</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Catálogo</a>
+    <a href="#beneficios">¿Por qué elegirnos?</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Haz sonreír con un detalle único</h2>
+    <p>Desde cajas sorpresa hasta arreglos personalizados, hechos con amor y dedicación.</p>
+    <button onclick="window.location='#productos'">Descubrir más</button>
+  </section>
+
+  <section class="products" id="productos">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Caja+de+Regalo" alt="Caja Sorpresa">
+      <h3>Caja Sorpresa</h3>
+      <p>Llena de dulces, mensajes y objetos personalizados.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Arreglo+Romántico" alt="Arreglo Romántico">
+      <h3>Arreglo Romántico</h3>
+      <p>Flores, chocolates y una nota especial para esa persona.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x200?text=Detalles+Empresariales" alt="Detalles Corporativos">
+      <h3>Detalles Corporativos</h3>
+      <p>Regalos únicos para tus clientes o colaboradores.</p>
+    </div>
+  </section>
+
+  <section class="benefits" id="beneficios">
+    <h2>¿Qué nos hace especiales?</h2>
+    <p>🌸 Diseños personalizados para cada ocasión</p>
+    <p>🎁 Empaque creativo y de alta calidad</p>
+    <p>💌 Incluye tu mensaje especial</p>
+    <p>🚚 Envíos a toda la ciudad</p>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Email: hola@detallescreativos.com</p>
+    <p>WhatsApp: +52 555 123 4567</p>
+    <p>Instagram: @detalles.creativos</p>
+  </section>
+
+  <footer>
+    © 2025 Detalles Creativos. Crea momentos inolvidables con nosotros.
+  </footer>
+
+</body>
+</html>

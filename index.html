@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YEYA CREACIONES</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    .navbar {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      color: #6a11cb;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu li a:hover {
+      color: #6a11cb;
+    }
+
+    .highlight {
+      background-color: #f3f7ff;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 4px solid #6a11cb;
+    }
+
+    .highlight h2 {
+      margin: 0;
+      font-size: 2rem;
+      color: #6a11cb;
+    }
+
+    .highlight p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 380px;
+        object-fit: contain;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: #fff;
+        display: block;
+      } 
+
+    .product-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 0.5rem 0;
+      color: #444;
+    }
+
+    .price {
+      color: #28a745;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .buy-btn {
+      background: linear-gradient(90deg, #28a745, #218838);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .buy-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #218838, #1e7e34);
+    }
+
+    footer {
+      background-color: #6a11cb;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: auto;
+    }
+    
+    .footer-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: text-decoration 0.3s;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+      color: #ffc107; /* o cualquier otro color destacado */
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .menu-toggle {
+        display: block;
+        text-align: left;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>YEYA CREACIONES</h1>
+    <p>"Diseñamos ideas, Creamos emociones"</p>
+  </header>
+
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul id="menu" class="menu">
+      <li><a href="#">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <section class="highlight">
+    <h2>¡DESCUBRE NUESTROS PRODUCTOS!</h2>
+    <p>Regalos únicos, personalizados y hechos con amor ♥</p>
+  </section>
+
+  <main class="container">
+    <div class="product-card">
+      <img src="image/stitch.jpg" alt="Alcancías decorativas">
+      <div class="product-info">
+        <h3>Alcancías Temáticas</h3>
+        <p class="price">------</p>
+        <a href="alcancias.html" class="buy-btn">
+          <i class="fas fa-shopping-cart"></i> Comprar
+        </a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="image/arreglos.jpeg" alt="Dulceros personalizados">
+      <div class="product-info">
+        <h3>Dulceros Personalizados</h3>
+        <p class="price">------</p>
+        <a href="dulceros.html" class="buy-btn">
+          <i class="fas fa-shopping-cart"></i> Comprar
+        </a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="image/wow.png" alt="Regalos creativos">
+      <div class="product-info">
+        <h3>Detalles Creativos</h3>
+        <p class="price">------</p>
+        <a href="detalles.html" class="buy-btn">
+          <i class="fas fa-shopping-cart"></i> Comprar
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Inicio</a>
+      <a href="#">Contacto</a>
+      <a href="#">Política de privacidad</a>
+     
+    </div>
+    &nbsp;&nbsp;
+    <div class="social-icons">
+      <a href="https://facebook.com/tuperfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/tuperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 YEYA CREACIONES. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
